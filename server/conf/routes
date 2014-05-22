@@ -1,0 +1,13 @@
+GET     /                           controllers.MainController.index
+
+POST    /api/render                 controllers.MainController.renderMarkdown
+
+GET     /api/notes                  controllers.MainController.apiListNotes
+GET     /api/note/$id<[0-9]+>       controllers.MainController.apiFindNote(id: Long)
+POST    /api/note                   controllers.MainController.apiCreateNote
+DELETE  /api/note/$id<[0-9]+>       controllers.MainController.apiDeleteNote(id: Long)
+PUT     /api/note/$id<[0-9]+>       controllers.MainController.apiUpdateNote(id: Long)
+
+
+
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
