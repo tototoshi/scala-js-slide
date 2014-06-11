@@ -8,11 +8,8 @@
     <!-- customize -->
     <link rel="stylesheet" href="css/custom.css"/>
 
-    <!-- syntax highlighter -->
-    <link type="text/css" rel="stylesheet" media="screen,projection" href="shjs-0.6/css/sh_bright.min.css">
-    <script type="text/javascript" src="shjs-0.6/sh_main.min.js"></script>
 </head>
-<body onload="sh_highlightDocument('shjs-0.6/lang/', '.js');">
+<body>
 
 <div class="section">
     <h1>scala-js-slide</h1>
@@ -41,7 +38,7 @@ $ ./sbt compile packageJS optimizeJS
 </div>
 
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-<script type="text/javascript" src="./target/scala-2.10/slide-opt.js"></script>
+<script type="text/javascript" src="./target/scala-2.11/slide-opt.js"></script>
 <script type="text/javascript">
     ScalaJSSlide().main()
 </script>
