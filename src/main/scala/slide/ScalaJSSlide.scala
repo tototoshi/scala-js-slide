@@ -67,8 +67,7 @@ object ScalaJSSlide extends URLUtil {
       KeyCode.DOWN -> Next
     )
 
-    val keyCodeAsInt = js.Number.toDouble(e.which).toInt
-    keyCodeAsInt match {
+    e.which match {
       case KeyCode.ESC =>
         moveToTopPage()
       case k => directions.get(k).foreach {

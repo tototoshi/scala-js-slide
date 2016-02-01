@@ -1,14 +1,13 @@
 // Turn this project into a Scala.js project by importing these settings
-scalaJSSettings
+enablePlugins(ScalaJSPlugin)
 
 name := "slide"
 
 version := "0.1-SNAPSHOT"
 
-scalaVersion := "2.11.0"
+scalaVersion := "2.11.7"
 
 libraryDependencies ++= Seq(
-  "org.scala-lang.modules.scalajs" %% "scalajs-dom" % "0.4",
-  "org.scala-lang.modules.scalajs" %% "scalajs-jquery" % "0.4",
-  "org.scala-lang.modules.scalajs" %% "scalajs-jasmine-test-framework" % scalaJSVersion % "test"
+  "org.scala-js" %%% "scalajs-dom" % "0.8.2",
+  "be.doeraene" %%% "scalajs-jquery" % "0.8.1"
 )
